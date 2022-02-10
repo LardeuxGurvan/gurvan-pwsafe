@@ -1,3 +1,5 @@
+init-project.sh
+
 # Logs
 logs
 *.log

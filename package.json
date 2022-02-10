@@ -1,0 +1,35 @@
+{
+  "name": "gurvan-pwsafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "DEBUG=*,-express:*,-nodemon* npx nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LardeuxGurvan/gurvan-pwsafe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LardeuxGurvan/gurvan-pwsafe/issues"
+  },
+  "homepage": "https://github.com/LardeuxGurvan/gurvan-pwsafe#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "redis": "^4.0.3"
+  }
+}
