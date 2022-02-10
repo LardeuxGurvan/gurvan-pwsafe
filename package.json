@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "DEBUG=*,-express:*,-nodemon* npx nodemon"
+    "dev": "DEBUG=*,-express*,-nodemon* npx nodemon"
   },
   "repository": {
     "type": "git",

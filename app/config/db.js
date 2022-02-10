@@ -1,7 +1,8 @@
 const { createClient } = require('redis');
 
 const client = createClient({
-    prefix: 'pwsafe:',
+    url: process.env.REDIS_URL,
 });
+client.connect();
 
 module.exports = client;

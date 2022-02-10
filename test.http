@@ -1,0 +1,13 @@
+@endpoint=http://localhost:{{$dotenv PORT}}
+
+### Sauvergarde de mot de passe
+POST {{ endpoint }}/test
+content-type: application/json
+
+{
+    "password":"sperpass"
+}
+
+### Récupération
+GET {{endpoint}}/test
+
