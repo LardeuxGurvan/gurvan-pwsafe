@@ -1,7 +1,12 @@
 const db = require('../config/db');
 
 module.exports = {
-    async getPw(pwLabel) {
-        return await db.get(pwLabel);
-    }
-}
+
+    getPw(pwLabel) {
+        return db.get(`${process.env.REDIS_PREFIX}:${pwLabel}`);
+    },
+
+    savePw(pwLabel, pw) {
+        return db.set(`${process.env.REDIS_PREFIX}:${pwLabel}`, pw);
+    },
+};
